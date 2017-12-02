@@ -4,16 +4,16 @@
 Advent of Code - Day Two, Part One
 '''
 
-CHECKSUM = 0
+checksum = 0
 
 with open('../input.txt', 'r') as f:
-    FILE_CONTENT = f.read().split('\n')
+    file_content = f.read().split('\n')
 
-for row in FILE_CONTENT:
+for row in file_content:
     if len(row) > 1:
         row = row.split('\t')
         row = map(int, row)
         row = sorted(row)
-        CHECKSUM += row[-1] - row[0]
+        checksum += row[-1] - row[0]
 
-print(CHECKSUM)
+print("Answer:", checksum)
