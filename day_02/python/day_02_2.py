@@ -8,7 +8,6 @@ CHECKSUM = 0
 
 with open('../input.txt', 'r') as f:
     FILE_CONTENT = f.read().split('\n')
-    f.close()
 
 for row in FILE_CONTENT:
     if len(row) > 1:
